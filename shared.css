@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 15% auto 5%;
+  grid-template-areas: "header" "main" "footer";
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(to bottom, #6BC826 50%, #ffffff 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.name-and-logo{
+  display: flex;
+  align-items: end;
+  gap: 0.2rem
+}
+
+.logo {
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.company-title {
+  color: #004D00;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.company-subtitle {
+  color: #004D00;
+  font-weight: bold;
+}
+
+.user-info {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
